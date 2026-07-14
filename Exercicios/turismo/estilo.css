@@ -89,6 +89,12 @@ footer{
     margin-top: 20px;
     
 }
+aside{
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    z-index: 5;
+}
 
 footer p{
     margin: 0;
