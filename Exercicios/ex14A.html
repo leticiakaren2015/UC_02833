@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        article{
+            width: 700px;
+            margin: 30px;
+        }
+
+        form{
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .linha{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .linha label{
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .linha input,
+        .linha select,
+        .linha textarea{
+            flex: 1;
+            padding: 8px;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        .botoes{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .botoes input{
+            padding: 8px 20px;
+            margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Comentários</h1>
+            <form action="mailto:leticiakaren2015@gmail.com" method="post" enctype="text/plain">
+                <div class="linha">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" maxlength="80" required>
+                </div>
+
+                <div class="linha">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" maxlength="50"required>
+                </div>
+
+                <div class="linha">
+                    <label for="assunto">Assunto</label>
+
+                    <select name="assunto" id="assunto">
+                        <option>Sugestão</option>
+                        <option>Reclamação</option>
+                        <option>Pedidos</option>
+                        <option>Encomendas</option>
+                    </select>
+                </div>
+
+                <div class="linha">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" maxlength="100"></textarea>
+                </div>
+
+                <div class="linha">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" maxlength="20">
+                </div>
+
+                <div class="botoes">
+                    <input type="submit" value="ok">
+                    <input type="reset" value="limpar">
+                </div>
+
+            </form>
+        </article>
+    </main>
+</body>
+</html>

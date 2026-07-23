@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        article{
+            width: 700px;
+            margin: 30px auto;
+        }
+
+        form{
+            background-color: white;
+            border: 1px grey solid;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .linha{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .linha label{
+            width: 130px;
+            font-weight: bold;
+        }
+
+        .linha input,
+        .linha select,
+        .linha textarea{
+            flex: 1;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea{
+            resize:  none;
+        }
+
+        .radio,
+        .checkbox label{
+            width: auto;
+            font-weight: normal;
+        }
+
+        .botoes{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .botoes input{
+            padding: 8px 18px;
+            margin: 0 5px;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ddd;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Inscrição</h1>
+            <form action="mailto:leticiakaren2015@gmail.com" method="post" enctype="text/plain">
+
+                <div class="linha">
+                    <label for="nome">Nome*</label>
+                    <input type="text" name="nome" id="nome" maxlength="80" required>
+                </div>
+
+                <div class="linha">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" maxlength="30" required>
+                </div>
+
+                <div class="linha">
+                    <label for="pass1">Password*</label>
+                    <input type="password" id="pass1" name="pass1" maxlength="20" required>
+                </div>
+
+                <div class="linha">
+                    <label for="pass2">Confirma*</label>
+                    <input type="password" id="pass2" name="pass2" maxlength="20" required>
+                </div>
+
+                <div class="linha">
+                    <label>Sexo</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="sexo" value="Masculino">Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="Feminino">Feminino
+                        </label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <label for="morada">Morada</label>
+                    <input type="text" id="morada" name="morada" maxlength="100">
+                </div>
+
+                <div class="linha">
+                    <label for="cp">C.Postal</label>
+                    <input type="text" id="cp" name="cp" maxlength="50">
+                </div>
+
+                <div class="linha">
+                    <label>Interesses</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="interesses" value="Programação"> Programação</label>
+                        <label><input type="checkbox" name="interesses" value="Webdesign"> Webdesign</label>
+                        <label><input type="checkbox" name="interesses" value="Imagem"> Imagem</label>
+                        <label><input type="checkbox" name="interesses" value="Vídeo"> Vídeo</label>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <label for="tipo">Tipo</label>
+                    <select name="tipo" id="tipo">
+                        <option>Formando</option>
+                        <option>Formador</option>
+                        <option>Coordenador</option>
+                        <option>Mediador</option>
+                    </select>
+                </div>
+
+                <div class="linha">
+
+                    <label for="sobre">Sobre</label>
+
+                    <textarea
+                        id="sobre"
+                        name="sobre"
+                        rows="4"
+                        maxlength="90"></textarea>
+
+                </div>
+
+                <div class="botoes">
+                    <input type="submit" value="Ok">
+                    <input type="reset" value="Limpar">
+                    <input type="button" value="criador" onclick="javascript:alert('Letícia Oliveira')">
+
+                </div>
+
+            </form>
+        </article>
+        <footer>
+            <p>&copy; 2026 Demo Forms. Todos os direitos reservados Letícia Oliveira @IEFP VN Gaia </p>
+        </footer>
+    </main>
+</body>
+</html>
